@@ -1,0 +1,438 @@
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: repeat(auto, 1fr);
+z-index: 0;
+grid-gap:0.072em;
+overflow-x: hidden;
+position: relative;
+}
+
+/* Effects applied to Grid when in Modal */
+.blur {
+  filter: blur(10px);
+    transition:;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+
+}
+.image-small {
+  width:100%;
+}
+
+*:focus {
+  outline: none;
+}
+.column:focus {
+  filter: invert(1);
+}
+
+
+.image-small:hover
+{
+position:;
+z-index:;
+transition:130ms;
+filter: contrast(1.2) opacity(0.88);
+}
+
+/* The Modal (background) */
+
+
+.modal {
+  display:;
+  position: fixed;
+  z-index:2;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(245,245,245,0.2);
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+.modal-content {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      width: 92%;
+    }
+
+
+/* Modal background for Close Function */
+.back{
+  position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  filter: invert();
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.numbertext{
+  text-align: right;
+  margin-top: 0.2em;
+  margin-right: 0.02em;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-weight: light;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.6);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: default;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+
+  color: white;
+  font-weight: lighter;
+  font-size: 22px;
+  transition: 0.6s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  filter: invert() opacity(0.34);
+  text-decoration: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right:-2.12em;
+}
+.prev {
+  margin-left:-2.12em;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.numbertext{
+
+}
+
+a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:active,a:hover {
+    outline: 0
+}
+
+a:hover,a:focus {
+    color: #23527c;
+}
+
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+img {
+    vertical-align: top;
+    transition: 1s;
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width:800px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+}
+    .image-small {
+       }
+}
+
+@media only screen and (max-width:640px) and (orientation: portrait) {
+.body {
+}
+    .grid {
+      background-color:black;
+}
+    .image-small{
+      padding: 0.0em 0.15em 0.0em 0.15em;
+    }
+}
+@media only screen and (max-width:640px) and (orientation: landscape) {
+.body {
+}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(24, 100%);
+      grid-template-rows: 1fr 1fr;
+      overflow-y:hidden;
+      overflow-x: scroll;
+      grid-gap:0.04em !important;
+      background-color: rgba(30,30,30,0.9);
+}
+    .image-small {
+ max-height: 50vh;
+       }
+}
+
+   /* Rotate the content container */
+   transform: rotate(-90deg);
+   transform-origin: left top;
+   /* Set content width to viewport height */
+   width: 100vh;
+   /* Set content height to viewport width */
+   height: 100vw;
+   overflow-x: hidden;
+   position: absolute;
+   top: 100%;
+   left: 0;
+
+   .back-btn {
+     position: absolute;
+     margin-left: 2em;
+     display:block;
+ top: 100px;
+ right: 100px;
+     width:1.5em;
+     height:1.5em;
+     border-radius:66px;
+     border:4px double #ccc;
+     font-size:20px;
+     color:#666;
+     line-height:100px;
+     text-align:center;
+     text-decoration:none;
+     text-shadow:0 1px 0 #fff;
+     z-index: 4;
+   }
+
+   .back-btn:hover {
+     border:4px double #bbb;
+     color:#aaa;
+     text-decoration:none;
+     background:#e6e6e6;
+   }
+
+   .back-btn:hover h1 {
+     display: block;
+   }
+
+   .back-btn h1{
+     position:;
+     display:;
+     font-size: 12px;
+     padding-left: 3em;
+     padding-top: 0.21em;
+     z-index:;
+   }
+
+.nav-wrapper {
+  display:;
+  height: auto;
+}
+
+   .pocket-wrapper{
+     grid-column: 1/3;
+     grid-row: 5;
+     width: 100%;
+     height:0px;
+     display: grid;
+     transition: 300ms;
+
+   }
+
+#open-pocket {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 99;
+  border: solid 1px rgba(5,5,5,.2);
+  background-color:;
+  grid-column: 1/3;
+  grid-row: 5;
+  border-radius: 50%;
+  justify-self:center;
+  margin-top: -1.03em;
+  background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+			background-image: linear-gradient(top, #f4f1ee, #fff);
+  	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, .3), inset 0px 1px 1px 1px rgba(255,255,255,0.9), inset 0px -1px 1px 1px rgba(204,198,197,.9);
+  transition: 170ms;
+}
+#open-pocket:active{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .2), inset 0px 2px 2px 1px rgba(255,255,255,.9), inset 0px -3px 2px 1px rgba(204,198,197,.9);
+
+}
+
+.open-pocket{
+  height: 400px;
+  background-color: green;
+}
+
+.image-small {
+}
+
+.sticky-wrapper {
+  position: relative;
+  z-index: 99;
+  margin-left: 2rem;
+}
+
+@supports (position: sticky){
+  .sticky-wrapper {
+  position: sticky;
+  top:2rem;
+}
+}
+
+.button-fullscreen {
+  position: -webkit-sticky;
+     position: absolute;
+
+display: flex;
+padding: 0.6em;
+border: 0.5px solid black;
+border-radius: 50% 50%;
+cursor: default;
+text-align: center;
+font-size: 18px;
+letter-spacing:;
+font-family: 'Markazi Text', sans-serif;
+font-weight:;
+filter: opacity(0.9);
+box-shadow: 8px 7px 2px 1px rgba(0,0,0,0.3);
+
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+transition: 120ms;
+
+   -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+         -ms-user-select: none; /* Internet Explorer/Edge */
+             user-select: none; /* Non-prefixed */
+}
+
+
+.button-fullscreen:hover{
+  filter: opacity(0.9);
+  background-color: rgba(255,255,255,0.4);
+  transform: translate(3px,2px);
+  box-shadow: 6px 5px 0px 1px rgba(0,0,0,0.15);
+}
+
+/*
+   .nav-marquee {
+    background-color: rgba(0,0,0,0.4);
+    overflow-x: hidden;
+    position:relative;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 100vw;
+    border: solid white 4px;
+   }
+   .nav-marquee h1 {
+    position: absolute;
+    -webkit-line-clamp: 1;
+     line-height: 2em;
+    height: 2em;
+
+    font-family: "Alegreya", sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 0.6em;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+
+     z-index: 99;
+
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    transform:translateX(70%);
+
+    -moz-animation: nav-marquee 40s linear infinite;
+    -webkit-animation: nav-marquee 40s linear infinite;
+    animation: nav-marquee 40s linear infinite;
+   }
+
+   @-moz-keyframes nav-marquee {
+    0%   { -moz-transform: translateX(70%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes nav-marquee {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes nav-marquee {
+    0%   {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    }
+    100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    }
+   }
+   .nav-marquee h1:hover {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    }
+*/
