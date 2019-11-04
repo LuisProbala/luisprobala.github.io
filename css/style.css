@@ -47,6 +47,11 @@ a:not([class]) {
 text-decoration-skip-ink: auto;
 }
 
+a {
+text-decoration: none;
+color:black;
+}
+
 /* Make images easier to work with */
 img {
 max-width: 100%;
@@ -135,17 +140,16 @@ body {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 
-   cursor: default;
    padding: 0.6em;
    margin-right: 1.5em;
    box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.1);
+   transition: 50ms;
 }
 
 .contato{
  padding: 0.6em;
  border: 0.5px solid black;
  background-color: white;
- cursor: default;
 
  position: relative;
 text-align: center;
@@ -154,6 +158,8 @@ letter-spacing:;
 font-family: 'Ruda', sans-serif;
 font-weight:;
 box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.1);
+transition: 50ms;
+
 
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
@@ -163,7 +169,10 @@ text-rendering: optimizeLegibility;
 .portfolio:hover,
 .contato:hover{
   filter: invert(1);
+  border: 0.5px solid white;
   box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.3);
+  transform: translate(3px,2px);
+
 }
 
 .nav-item-titles {

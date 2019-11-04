@@ -148,9 +148,11 @@ filter: contrast(1.2) opacity(0.88);
 .next {
   right: 0;
   margin-right:-2.12em;
+  border-radius: 0px 14px 14px 0px;
 }
 .prev {
   margin-left:-2.12em;
+  border-radius: 14px 0px 0px 14px;
 }
 
 .prev:hover,

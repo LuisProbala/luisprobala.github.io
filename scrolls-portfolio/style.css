@@ -174,16 +174,13 @@ body{
  text-align: center;
  text-rendering: optimizeLegibility;
  text-transform: uppercase;
-
  -moz-transform:translateX(100%);
  -webkit-transform:translateX(100%);
  transform:translateX(70%);
-
  -moz-animation: nav-marquee 40s linear infinite;
  -webkit-animation: nav-marquee 40s linear infinite;
  animation: nav-marquee 40s linear infinite;
 }
-
 @-moz-keyframes nav-marquee {
  0%   { -moz-transform: translateX(70%); }
  100% { -moz-transform: translateX(-100%); }
