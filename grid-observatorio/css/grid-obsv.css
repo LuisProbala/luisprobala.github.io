@@ -136,7 +136,7 @@ filter: contrast(1.2) opacity(0.88);
   color: white;
   font-weight: lighter;
   font-size: 22px;
-  transition: 0.6s ease;
+  transition: 0.2s ease;
   user-select: none;
   -webkit-user-select: none;
   filter: invert() opacity(0.34);
