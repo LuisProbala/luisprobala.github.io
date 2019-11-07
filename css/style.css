@@ -95,6 +95,8 @@ body {
  align-self: center;
  text-align: justify;
  width: 600px;
+ font-size: 16px;
+ font-family: "Markazi Text, sans-serif"
 }
 
 .logo {
@@ -104,6 +106,27 @@ body {
  align-self: center;
 }
 
+.overtitles{
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  font-family: 'Ruda', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+.title {
+  justify-self:start;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  align-self:;
+}
+.date{
+  justify-self:end;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
 
 .nav-wrapper {
   display: grid;
@@ -289,10 +312,10 @@ text-rendering: optimizeLegibility;
   height:0px;
   transition: all 0.25s;
   grid-column-gap: 1rem;
-  grid-row-gap: 0.5rem;
+  grid-row-gap: 3rem;
   display: grid;
   grid-template-columns: 20px repeat(8, 1fr) 20px;
-  grid-template-rows: 0.7fr 1fr;
+  grid-template-rows: auto 1fr;
   margin-top: -0.9em;
   overflow: hidden;
 }
@@ -325,7 +348,7 @@ text-rendering: optimizeLegibility;
     margin-top: 4%;
     margin-left:5%;
     width: 750px;
-    height: 220px;
+    height: 95%;
     background: #B2BEB5;
   );  content: '';
   filter: opacity(0.3);
@@ -404,7 +427,7 @@ figcaption {
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr;
   align-items: start;
-  justify-content: start;
+  justify-content:;
   overflow-x: auto;
   margin-bottom: 2rem;
 }
@@ -416,7 +439,7 @@ figcaption {
   grid-row-start: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   align-items: start;
   flex-direction:;
   min-width: 42vw;
@@ -432,7 +455,7 @@ figcaption {
   grid-row-start: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   align-items: start;
   min-width: 42vw;
   width: auto;
@@ -466,20 +489,23 @@ figcaption {
 
 .pages-img-1 img {
     border: solid white 7px;
+    border-top: none;
+    min-width: 215px;
 }
 
 .pages-img-2 {
   grid-column: 2/3;
   grid-row: 1/2;
   align-self:center;
-  margin-bottom: -6rem;
+  margin-bottom: -3.5rem;
 }
 
 .pages-img-2 img {
   width: 62%;
   margin-left:;
-
+  min-width: 153px;
   border: solid white 7px;
+  border-top:none;
 }
 
 .pages-img-3 {
