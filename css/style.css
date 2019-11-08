@@ -85,19 +85,21 @@ body {
 
 .intro-wrapper {
   display: grid;
-  grid-template-columns: 8rem 1fr calc(250px + 2rem) 1fr 8rem;
+  grid-template-columns: 6.2rem 1fr calc(250px + 2rem) 1fr 8rem;
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   height:auto;
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 
 .intro-title{
-
-height: 2rem;
+margin-top: 3.4rem;
+height:auto;
 font-size: 20px;
 letter-spacing: 1.5rem;
-font-famsily: 'Ruda', sans-serif;
+font-family: 'Ruda', sans-serif;
+justify-self:center;
+text-align: center;
 }
 
 .colirio-wrapper-left{
@@ -167,7 +169,7 @@ grid-column: 3/4;
 
  .intro-text-2 {
   margin-left: 150px;
-  margin-top: 1.4rem;
+  margin-top: 1.35rem;
   align-self:;
   text-align: justify;
   width: auto;
@@ -238,8 +240,9 @@ grid-column: 3/4;
   position: sticky;
   z-index: 1;
   align-items: center;
-  margin-right: -6.615rem;
-  bottom: 7%;
+  justify-content: flex-end;
+  margin-right: -6.25rem;
+  bottom: 0;
   transform: rotate(-90deg);
 
   -webkit-touch-callout: none; /* iOS Safari */
@@ -269,7 +272,6 @@ grid-column: 3/4;
    -moz-osx-font-smoothing: grayscale;
 
    padding: 0.6em;
-   margin-right: 1.5em;
    box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.1);
    transition: 50ms;
 }
@@ -831,22 +833,23 @@ margin-right:4%;
 .hrone:after{
   position: absolute;
   background-image: url(/img/play_arrow-24px.svg);
-
-  background-repeat: 0/90px repeat;
+  background-repeat: repeat-x;
   z-index: 0;
   height: 20px;
   width: 100%;
   margin-top: 0.29rem;
   transform: scale(0);
+  filter: opacity(0.3);
   content: '';
 }
+
 .hrone::before{
   position: absolute;
   content: "Escolhe:";
   z-index:;
   font-size: 14px;
   font-weight:;
-  margin-top: -0.5rem;
+  margin-top: -1.4rem;
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Ruda', sans-serif;
   text-rendering: optimizeLegibility;
