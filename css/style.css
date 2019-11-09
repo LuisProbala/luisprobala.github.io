@@ -85,17 +85,18 @@ body {
 
 .intro-wrapper {
   display: grid;
-  grid-template-columns: 6.2rem 1fr calc(250px + 2rem) 1fr 8rem;
-  grid-template-rows: 1fr;
+  grid-template-columns: 11rem 1fr calc(250px + 2rem) 1fr 8.3rem;
+  grid-template-rows: auto;
   grid-column-gap: 2rem;
-  height:auto;
-  margin-top: 0rem;
+  height:;
+  margin-top: 0.2rem;
+  margin-bottom: -3rem;
 }
 
 .intro-title{
-margin-top: 4.2rem;
-margin-left: -0.82rem;
-margin-bottom: -0.6rem;
+margin-top: 3.6rem;
+margin-left: -0.72rem;
+margin-bottom: -0.4rem;
 height:auto;
 font-size: 19px;
 letter-spacing: 1rem;
@@ -106,7 +107,9 @@ font-weight: bold;
 border: solid 1px black;
 border-left: none;
 border-right: none;
-padding: 0.3rem;
+padding-bottom: 0.3rem;
+padding-top: 0.4rem;
+padding-left: 4.4rem;
 }
 
 .colirio-wrapper-left{
@@ -119,35 +122,36 @@ grid-row: 1/2;
 }
 
 /* left-wrapper */
+
 .intro-text-1 {
   align-self:;
   text-align: justify;
   width: auto;
   margin-right: 150px;
-   margin-top: 1.2rem;
+   margin-top: 2rem;
   font-size: 19px;
   font-weight: lighter;
   font-family: 'Markazi Text', sans-serif;
  }
 
  .intro-indice {
-   align-self:end;
    text-align: justify;
-   width: auto;
    margin-right: 150px;
-   margin-top: 5rem;
    font-size: 19px;
    font-weight: lighter;
    font-family: 'Markazi Text', sans-serif;
+   display:;
 
-  }
+   margin-top: 5rem;
+   align-self:;
+ }
 
  .circle{
    grid-column: 3/4;
    grid-row: 1/2;
    float: right;
    width: 250px;
-   height: auto;
+   height: 250px;
    padding: 1rem;
 
    align-self: center;
@@ -176,7 +180,7 @@ grid-column: 3/4;
 
  .intro-text-2 {
   margin-left: 150px;
-  margin-top: 1.2rem;
+  margin-top: 2rem;
   align-self:;
   text-align: justify;
   width: auto;
@@ -186,7 +190,7 @@ grid-column: 3/4;
  }
 
  .intro-colirio {
-   margin-top: 1rem;
+   margin-top: 1.5rem;
    margin-left: 150px;
  float:;
    align-self:;
@@ -223,7 +227,7 @@ grid-column: 3/4;
 .nav-wrapper {
   display: grid;
   grid-template-columns: 6.2rem 0.9842fr 60px 80px ;
-  grid-template-rows: 60px auto 100px 60px ;
+  grid-template-rows: 30px auto 100px 60px ;
   min-height:100vh;
 }
 
@@ -809,7 +813,7 @@ align-self:start;
 margin-top:15%;
 margin-left:24%;
 margin-right:4%;
-    z-index: 9;
+    z-index: -1;
     background: white;
     padding: 0.5rem;
     padding-right: 0.6rem;
@@ -854,9 +858,9 @@ margin-right:4%;
   position: absolute;
   content: "Escolhe:";
   z-index:;
-  font-size: 14px;
+  font-size: 13px;
   font-weight:;
-  margin-top: -1.4rem;
+  margin-top: -0.4rem;
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Ruda', sans-serif;
   text-rendering: optimizeLegibility;
