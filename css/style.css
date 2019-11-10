@@ -446,9 +446,25 @@ text-rendering: optimizeLegibility;
     width: 750px;
     height: 95%;
     background: #B2BEB5;
-  );  content: '';
+    content: '';
   filter: opacity(0.3);
 }
+
+#slideshow div:first-child {
+   position: relative;
+   display: block;
+   }
+
+#slideshow > div {
+    position: absolute;
+    display:none;
+    top: 0;
+}
+#slideshow {
+  height: 100%;
+  width: 100%;
+}
+
 /*
 .nav-item-content-img:before {
     position: absolute;

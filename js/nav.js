@@ -143,6 +143,17 @@ $(function () {
 });
 
 
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .hide()
+    .next()
+    .show()
+    .end()
+    .appendTo('#slideshow');
+},4000);
+
 /*
 jQuery(function ($) {
     $('.nav-item-1, .nav-item-2, .nav-item-3, .nav-item-4').hover(function () {
