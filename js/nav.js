@@ -154,6 +154,18 @@ setInterval(function() {
     .appendTo('#slideshow');
 },4000);
 
+
+function hover(element) {
+  element.setAttribute('src', '/img/observ2.gif');
+}
+
+function unhover(element) {
+  element.setAttribute('src', '/img/ciep-prev1.png');
+}
+
+
+
+
 /*
 jQuery(function ($) {
     $('.nav-item-1, .nav-item-2, .nav-item-3, .nav-item-4').hover(function () {
