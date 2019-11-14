@@ -1,4 +1,3 @@
-
 function a11yClick(event){
     if(event.type === 'click'){
         return true;
@@ -106,6 +105,7 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+
 
 
 

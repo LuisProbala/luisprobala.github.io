@@ -331,20 +331,24 @@ img {
 .sticky-wrapper {
   position: relative;
   z-index: 99;
-  margin-left: 2rem;
+  margin-left:;
+  display: flex;
+  flex-direction: column;
 }
 
 @supports (position: sticky){
   .sticky-wrapper {
   position: sticky;
-  top:2rem;
+  top:0;
 }
 }
 
 .button-fullscreen {
   position: -webkit-sticky;
      position: absolute;
-       padding: 0.6em;
+       padding: 0em;
+       margin-left: 0;
+       margin-top: 3rem;
 
 display: flex;
 filter: opacity(.6);
@@ -371,14 +375,48 @@ transition: 120ms;
 
 
 .button-fullscreen:hover{
+  filter: opacity(0.8);
+  cursor:;
+/*
   border: 1px solid rgba(0, 0, 0, .1);
   box-shadow: 8px 7px 2px 1px rgba(0,0,0,0.1);
-  filter: opacity(0.8);
   background-color: rgba(255,255,255,0.3);
   transform: translate(3px,2px);
   box-shadow: 6px 5px 0px 1px rgba(0,0,0,0.15);
+*/
 }
 
+.button-fullscreen:hover::after {
+content: 'FULLSCREEN';
+ font-family: 'Alegreya Sans', sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ letter-spacing:;
+ color:rgba(0,0,0,0.98);
+ font-weight:;
+ text-align: center;
+ font-size: 13px;
+ padding-left: 1.2rem;
+ margin-top: 0.1rem;
+ align-self: center;
+float: ;
+}
+
+:fullscreen .button-fullscreen {
+display: none;
+}
+
+.back-button {
+  display:;
+  position: absolute;
+
+}
+
+.next-button {
+  display:;
+  position: absolute;
+  right: 0;
+}
 /*
    .nav-marquee {
     background-color: rgba(0,0,0,0.4);

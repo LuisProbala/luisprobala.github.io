@@ -217,6 +217,9 @@ grid-column: 3/4;
 
  #swap {
      -webkit-font-smoothing: antialiased;
+     color: hsl(24,94%,55%);
+     font-size: 19.5px;
+     margin-left: 0.1rem;
  }
 
 .footer {
