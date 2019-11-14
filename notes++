@@ -1,0 +1,57 @@
+
+    <!-- 3 -->
+        <div class="nav-item" id="nav-item-3" onclick="open3Function()">
+        <div class="nav-item-titles">
+          <div class="nav-item-title-A"><b>Imagem e locura</b></div>
+          <div class="nav-item-title-B">coleção do Museu de Imagens do Inconsciente</div>
+      </div>
+      <div class="nav-item-content" id="content3">
+        <div class="nav-item-content-text" id="">
+        A pesquisa foca nos edifícios escolares projetados por Oscar Niemeyer,
+        implementados pelo os governos do Leonel Brizola (1983 – 1987 e 1991 – 1994) como Centros Integrados
+        de Educação Pública (CIEPs), um projeto educacional de autoria do antropólogo Darcy Ribeiro.</div>
+        <div class="nav-item-content-img">
+          <img class="content-img" id="" src="/img/cieps2.png" onclick="openModal();currentSlide(1)"><figcaption id="">CIEP-322 / CIEP-123</figcaption>
+        </div>
+
+<div class="hrone"></div>
+
+        <div class="nav-item-pages">
+
+          <div class="nav-item-pages-1">
+            <div class="pages-title"><p>O COMPLEXO <i>PEDRO II</i></p></div>
+            <div class="pages-text-1">
+              A pesquisa foca nos edifícios escolares projetados por Oscar Niemeyer,
+              implementados pelo os governos do Leonel Brizola (1983 – 1987 e 1991 – 1994) como Centros Integrados
+              de Educação Pública (CIEPs)
+            </div>
+            <div class="pages-img-1">
+            <img src="/img/ciep-a.png" alt="">
+          </div></div>
+
+          <div class="nav-item-pages-2">
+            <div class="pages-title"><p>ESBOÇO PARA BASE DE DADOS DO <i>MII</i></p></div>
+            <div class="pages-text-2">
+              A pesquisa foca nos edifícios escolares projetados por Oscar Niemeyer,
+              implementados pelo os governos do Leonel Brizola (1983 – 1987 e 1991 – 1994) como Centros Integrados
+              de Educação Pública (CIEPs)
+            </div>
+          <div class="pages-img-2">
+            <img src="/img/ciepglobo.png" alt="">
+            </div>
+          </div>
+
+          <div class="nav-item-pages-3">
+            <div class="pages-title"><p>CONTEXTOS DE ANALISE DOS IMAGEMS DO <i>MII</i></p></div>
+            <div class="pages-text-3">
+              A pesquisa foca nos edifícios escolares projetados por Oscar Niemeyer,
+              implementados pelo os governos do Leonel Brizola (1983 – 1987 e 1991 – 1994) como Centros Integrados
+              de Educação Pública (CIEPs)
+            </div>
+          <div class="pages-img-2">
+            <img src="/img/ciepglobo.png" alt="">
+            </div>
+          </div>
+
+        </div>
+    </div></div>
