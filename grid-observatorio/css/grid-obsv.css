@@ -74,7 +74,9 @@ filter: contrast(1.2) opacity(0.88);
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%);
-      width: 92%;
+      width: 100%;
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
     }
 
 
@@ -130,7 +132,7 @@ filter: contrast(1.2) opacity(0.88);
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 15px;
   margin-top: -50px;
 
   color: white;
@@ -147,12 +149,12 @@ filter: contrast(1.2) opacity(0.88);
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  margin-right:-2.12em;
-  border-radius: 0px 14px 14px 0px;
+  margin-right:0.75rem;
+  border-radius: 1px 14px 14px 1px;
 }
 .prev {
-  margin-left:-2.12em;
-  border-radius: 14px 0px 0px 14px;
+  margin-left:-1.1rem;
+  border-radius: 14px 1px 1px 14px;
 }
 
 .prev:hover,
@@ -342,19 +344,16 @@ img {
 .button-fullscreen {
   position: -webkit-sticky;
      position: absolute;
+       padding: 0.6em;
 
 display: flex;
-padding: 0.6em;
-border: 0.5px solid black;
-border-radius: 50% 50%;
+filter: opacity(.6);
 cursor: default;
 text-align: center;
 font-size: 18px;
 letter-spacing:;
 font-family: 'Markazi Text', sans-serif;
 font-weight:;
-filter: opacity(0.9);
-box-shadow: 8px 7px 2px 1px rgba(0,0,0,0.3);
 
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
@@ -372,8 +371,10 @@ transition: 120ms;
 
 
 .button-fullscreen:hover{
-  filter: opacity(0.9);
-  background-color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 8px 7px 2px 1px rgba(0,0,0,0.1);
+  filter: opacity(0.8);
+  background-color: rgba(255,255,255,0.3);
   transform: translate(3px,2px);
   box-shadow: 6px 5px 0px 1px rgba(0,0,0,0.15);
 }
