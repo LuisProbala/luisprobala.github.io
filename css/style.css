@@ -81,7 +81,36 @@ scroll-behavior: auto !important;
 }
 
 body {
+  overflow-x: hidden;
 }
+
+.intro-title{
+  position: sticky;
+    position: -webkit-sticky;
+    top: 1.42rem; /* required */
+margin-top: 3.4rem;
+margin-left: -0.89rem;
+margin-bottom: -0.5rem;
+height:auto;
+border: solid 1px black;
+border-left: none;
+border-right: none;
+padding-bottom: 0.2rem;
+padding-top: 0.43rem;
+padding-left: 4.4rem;
+z-index: 1;
+background: rgba(255, 255, 255, 0.9);
+}
+.intro-title h1 {
+  font-size: 20px;
+  letter-spacing: 1rem;
+  font-family: 'Alegreya Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  justify-self:center;
+  text-align: center;
+  font-weight: lighter;
+}
+
 
 .intro-wrapper {
   display: grid;
@@ -93,26 +122,6 @@ body {
   margin-bottom: -3rem;
 }
 
-.intro-title{
-margin-top: 3.6rem;
-margin-left: -0.795rem;
-margin-bottom: -0.5rem;
-height:auto;
-font-size: 20px;
-letter-spacing: 1rem;
-font-family: 'Alegreya Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-justify-self:center;
-text-align: center;
-font-weight:;
-border: solid 1px black;
-border-left: none;
-border-right: none;
-padding-bottom: 0.2rem;
-padding-top: 0.43rem;
-padding-left: 4.4rem;
-
-}
 
 .colirio-wrapper-left{
   grid-column: 2/4;
@@ -256,9 +265,21 @@ grid-column: 3/4;
   padding: 1rem;
 }
 
-.bio-column-3{
+.bio-column-3 p{
   max-width: 340px;
   padding: 1rem;
+}
+.bio-column-3 {
+  justify-content:;
+}
+
+.arrow-up{
+  position: absolute;
+  align-self: flex-end;
+  margin-left:;
+  right: 3.86rem;
+  margin-bottom: -2rem;
+
 }
 
 .overtitles{
