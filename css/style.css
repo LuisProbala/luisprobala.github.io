@@ -518,6 +518,8 @@ text-rendering: optimizeLegibility;
   border: solid white 7px;
   border-top: solid white 5px;
   filter:;
+
+  image-rendering:;
 }
 
 .nav-item-content-img:before {

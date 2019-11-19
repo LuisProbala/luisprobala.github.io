@@ -1,12 +1,112 @@
+
+html{ background-color:;}
+
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+margin: 0;
+overscroll-behavior: none;
+
+}
+
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+text-decoration-skip-ink: auto;
+}
+
+a {
+text-decoration: none;
+color:black;
+}
+
+/* Make images easier to work with */
+img {
+max-width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+* {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+}
+}
+
 body {
 margin: 0;
 padding: 0;
 -webkit-scrollbar: none;
-
 }
 
 html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.page-title {
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  background: rgba(255,255,255,0.97);
+  padding: 0.5rem;
+  padding-left: 2rem;
+  z-index: 99;
+}
+
+@font-face {
+    font-family: "ArchivoNarrow";
+    src: url(/assets/ArchivoNarrow-Italic.ttf);
+}
+
+.page-title p {
+  font-family: 'ArchivoNarrow';
 }
 
 .hor-scroll-page {
