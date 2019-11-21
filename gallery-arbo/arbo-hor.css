@@ -90,6 +90,11 @@ html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+#page-map {
+  background: -moz-element(#map) no-repeat center / contain; /* vendor prefixed */
+}
+
+
 .page-title {
   position: absolute;
   left: 0;

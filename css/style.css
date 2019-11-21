@@ -177,6 +177,7 @@ grid-row: 1/2;
    shape-outside: circle(50%);
    clip-path: circle(50%);
    display: hidden;
+   -moz-image-rendering: none;
    image-rendering: crisp-edges;
  }
 
@@ -195,7 +196,8 @@ grid-column: 3/4;
  justify-self: center;
    shape-outside: circle(50%);
    clip-path: circle(50%);
-   image-rendering: crisp-edges;
+   image-rendering:;
+   moz-image-rendering: none;
  }
 
  .intro-text-2 {
@@ -308,7 +310,7 @@ grid-column: 3/4;
   display: grid;
   grid-template-columns: 6.2rem 0.9842fr 60px 80px ;
   grid-template-rows: 30px auto auto 60px ;
-  min-height:100vh;
+  min-height:;
 }
 
 .nav {
@@ -319,7 +321,8 @@ grid-column: 3/4;
   justify-content:;
   overflow-y:;
   overflow-x: hidden;
-  min-height:100vh;
+  min-height:;
+  max-height:100%;
   scroll-snap-type: y proximity;
   transition: 0.5s;
 }
@@ -536,20 +539,21 @@ text-rendering: optimizeLegibility;
   filter: opacity(0.2);
 }
 
-#slideshow div:first-child {
+#slideshow div:first-child, #slideshow2 div:first-child {
    position: relative;
    display: block;
    }
 
-#slideshow > div {
+#slideshow > div, #slideshow2 > div  {
     position: absolute;
     display:none;
     top: 0;
 }
-#slideshow {
+#slideshow, #slideshow2 {
   height: 100%;
   width: 100%;
 }
+
 
 /*
 .nav-item-content-img:before {
