@@ -15,9 +15,24 @@ html {
     overflow: hidden;
 }
 
+@font-face {
+    font-family: "ArchivoNarrow";
+    src: url(/assets/ArchivoNarrow-Italic.ttf);
+}
+
+.page-title p {
+  font-family: 'ArchivoNarrow';
+}
+
 .page-title {
   position: absolute;
-  font-family: 'ArchivoNarrow';
+  left: 0;
+  top: 3rem;
+  background: rgba(255,255,255,0.97);
+  padding:;
+  padding-left: 2.5rem;
+  z-index: 99;
+  padding-right: 1rem;
 }
 
 .page-wrapper {
@@ -25,7 +40,6 @@ html {
   grid-template-columns: 1rem 1fr 1rem;
   grid-template-rows: 2rem 1fr 10rem;
   height: 100vh;
-
 }
 
 .hor-scroll {
@@ -45,6 +59,7 @@ html {
   -webkit-overflow-scrolling: touch;
   -webkit-scrollbar: none;
  }
+
 .hor-scroll img {
   height: 100%;
 }
@@ -55,17 +70,15 @@ html {
   position:;
   grid-column: auto;
   grid-row: 1/2;
-  justify-content:center;
+  justify-content: center;
   align-items:;
   grid-column-gap:;
   scroll-snap-align: center;
 }
+
 .arbo-foto img {
-justify-self:;
-align-self:;
-max-height: auto;
-margin-top:;
-  }
+}
+
 
  i {
    height: 44px;
