@@ -62,6 +62,25 @@ else {
 }
 }
 
+function open5Function() {
+  var element = document.getElementById("content5");
+
+if (element.classList) {
+  element.classList.toggle("open-item");
+}
+else {
+  // For IE9
+  var classes = element.className.split(" ");
+  var i = classes.indexOf("open-item");
+
+  if (i >= 0)
+    classes.splice(i, 1);
+  else
+    classes.push("open-item");
+    element.className = classes.join(" ");
+}
+}
+
 // slideshow prev
 
 $("#slideshow > div:gt(0)").hide();
