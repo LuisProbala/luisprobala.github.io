@@ -4,7 +4,7 @@
   var windowWidth;
 
   function init() {
-    elements = document.querySelectorAll('.hidden');
+    elements = document.querySelectorAll('.first');
     windowWidth = window.innerWidth;
   }
 
@@ -13,13 +13,13 @@
       var element = elements[i];
       var positionFromLeft = elements[i].getBoundingClientRect().left;
 
-      if (positionFromLeft - windowWidth <= 0) {
-        element.classList.add('position-1')
-        element.classList.remove('hidden');
+      if (positionFromLeft <= 100) {
+        element.classList.add('first-moved')
+        element.classList.remove('first');
       }
     }
   }
-  window.addEventListener('scroll', checkPosition)
+document.getElementById("map").addEventListener('scroll', checkPosition)
   window.addEventListener('resize', init);
 
   init();
