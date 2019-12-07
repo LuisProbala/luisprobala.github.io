@@ -4,7 +4,7 @@
   var windowWidth;
 
   function init() {
-    elements = document.querySelectorAll('.first');
+    elements = document.querySelectorAll('.mapa');
     windowWidth = window.innerWidth;
   }
 
@@ -13,9 +13,9 @@
       var element = elements[i];
       var positionFromLeft = elements[i].getBoundingClientRect().left;
 
-      if (positionFromLeft <= 100) {
-        element.classList.add('first-moved')
-        element.classList.remove('first');
+      if (positionFromLeft <= -600) {
+        element.classList.add('mapa-moved')
+        element.classList.remove('mapa');
       }
     }
   }

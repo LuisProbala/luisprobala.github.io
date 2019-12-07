@@ -160,3 +160,16 @@ document.addEventListener('DOMContentLoaded',function(event){
   // start the text animation
   StartTextAnimation(0);
 });
+
+
+
+$(document).ready(function(){
+$("#logo-front") // select your element (supports CSS selectors)
+    .hover(function(){ // trigger the mouseover event
+        $("#logo-back") // select the element to show (can be anywhere)
+            .addClass('intro-logo-ani'); // show the element
+    }, function(){ // trigger the mouseout event
+        $("#logo-back") // select the same element
+            .removeClass('intro-logo-ani'); // hide it
+    });
+    })

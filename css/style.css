@@ -162,7 +162,7 @@ grid-row: 1/2;
    text-rendering: optimizeLegibility;
  }
 
- .circle{
+ .intro-logo-left{
    grid-column: 3/4;
    grid-row: 1/2;
    float: right;
@@ -180,9 +180,21 @@ grid-row: 1/2;
    image-rendering: crisp-edges;
  }
 
+.intro-logo-left {
+}
+
+.intro-logo-ani {
+animation: spin 9s linear 0s infinite;
+}
+@keyframes spin {
+100% { transform: rotate(360deg); }
+}
+
+
+
 /* right-wrapper */
 
-.intro-logo{
+.intro-logo-right{
 
   filter: opacity(1);
 float: left;
@@ -746,12 +758,15 @@ figcaption {
   background: repeating-linear-gradient(
     -45deg,white,white 7px,black 0px,black 14px);
   content: '';
+  border: 0px solid lightgrey;
   filter: opacity(0.1);
+  box-shadow: 0px 0px 9px 2px lightgrey;
 }
 
 
 
 .nav-item-pages-1:hover:before {
+
   filter: opacity(0.1);
   background: repeating-linear-gradient(
   -45deg,white,white 7px,	black 0px, black 14px);
@@ -975,24 +990,4 @@ animation: slide 13s infinite linear backwards;
   transition: 100ms;
 }
 
-#ae2:hover::after {
-content: 'xx EM CONSTRUÇÃO xx';
-font-family: 'Darker Grotesque', sans-serif;
-color: rgba(248,132,54,.9);
-text-shadow: 6px 2.5px 0px;
-line-height: 17rem;
-text-align: center;
-vertical-align: middle;
-padding-top: 0rem;
-font-size: 22px;
-font-weight: bold;
-letter-spacing: 0.85rem;
-position: absolute;
-width: 101.5%;
-height: 115%;
-cursor: default;
-user-select: none;
-pointer-events: none;
-background-color: rgba(255,255,255,.9);
-z-index:1;
-}
+#ae2:hover::after {content: 'xx EM CONSTRUÇÃO xx';font-family: 'Darker Grotesque', sans-serif;color: rgba(248,132,54,.9);text-shadow: 6px 2.5px 0px;line-height: 17rem;text-align: center;vertical-align: middle;padding-top: 0rem;font-size: 20px;font-weight: bold;letter-spacing: 0.75rem;position: absolute;width: 101.5%;height: 115%;cursor: default;user-select: none;pointer-events: none;background-color: rgba(255,255,255,.9);z-index:1;}
