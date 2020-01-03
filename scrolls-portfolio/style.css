@@ -101,7 +101,7 @@ body{
 }
 
 
-.page {
+.websites {
   justify-content: center;
   flex: 0 0 100vw;
   height: 100vh;
@@ -114,14 +114,14 @@ body{
   overflow-y:hidden;
 }
 
-#page3 {
+#design {
   position: relative;
   grid-template-columns: 30px 1fr 1fr 9.5fr 0.9fr 20px;
   grid-template-rows: 10px 1.6em 2em auto auto 25%;
 }
 
 
-#page3 .synopsis{
+#design .synopsis{
   position: sticky;
   grid-column: 2/4;
   grid-row: 4/8;

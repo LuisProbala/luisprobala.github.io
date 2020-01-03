@@ -48,15 +48,16 @@
 
   <section class="page" id="index">
 
-    <div class="scroll-links">
-    <a href="#">
-      <img src="" alt="">
+    <div class="tab-wrapper">
+
+    <a href="#" class="index-tab">
+      <img src="img/bioarte_evento.png" alt="">
     </a>
-    <a href="#">
-      <img src="" alt="">
+    <a href="#" class="index-tab">
+      <img src="img/bioarte_evento.png" alt="">
     </a>
-    <a href="#">
-      <img src="" alt="">
+    <a href="#" class="index-tab">
+      <img src="img/bioarte_evento.png" alt="">
     </a>
     </div>
 
@@ -75,11 +76,11 @@
   <div class="mini-nav" id="nav-lux">
    <!--<img src="img/luxtec-logo" alt="">-->
    <ul>
-     <li><a onClick="function()" href="#intro">Intro</a> |</li>
-     <li><a href="#empresa">Empresa</a> |</li>
-     <li><a href="#fibra">Fibra Óptica</a> |</li>
-    <li><a href="#servicos">Serviços</a> |</li>
-    <li><a href="#produtos">Produtos</a></li>
+     <li><a onClick="function()" href="#intro" class="minitab">Intro</a> |</li>
+     <li><a href="#empresa" class="minitab">Empresa</a> |</li>
+     <li><a href="#fibra" class="minitab">Fibra Óptica</a> |</li>
+    <li><a href="#servicos" class="minitab">Serviços</a> |</li>
+    <li><a href="#produtos"class="minitab" >Produtos</a></li>
    </ul>
   </div>
 
@@ -235,6 +236,9 @@
 
 <script type="text/javascript">
 
+
+<!-- active mini-nav -->
+
 $(".mini-nav ul li").click(function(){ // don't need each (click does this internally)
  $(this).children().addClass('activeElem') //add cell-selected class to a
  .parent() //go back to li
@@ -242,6 +246,8 @@ $(".mini-nav ul li").click(function(){ // don't need each (click does this inter
  .find('.activeElem') //find cell-selected elements
  .removeClass('activeElem'); //remove the class
 });
+
+<!-- active syno-li -->
 
 $(".syno-web ul li").mouseenter(function(){ // don't need each (click does this internally)
  $(this).children().addClass('activeSyno') //add cell-selected class to a
@@ -324,9 +330,6 @@ $(function(){
     }
 
 });
-
-
-
 
 
 </script>
